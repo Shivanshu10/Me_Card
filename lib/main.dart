@@ -56,7 +56,7 @@ class _MiCardState extends State<MiCard> {
               )
             ),
             ContactInfoCard(icon: Icons.phone, text: '+91 9876543210'),
-            ContactInfoCard(icon: Icons.email, text: 'mailid@gmail.edu')
+            ContactInfoCard(icon: Icons.email, text: 'smail@gmail.com')
           ],
         )
       )
@@ -80,6 +80,7 @@ class ContactInfoCard extends StatelessWidget {
           child: ListTile(
             leading: Icon(icon, color: Colors.teal),
             title: Text(text,
+              maxLines: 1,
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.teal.shade900,
